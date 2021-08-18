@@ -2,6 +2,8 @@
 
 This project demonstrates an issue that can hopefully be addressed in [rules_apple](https://github.com/bazelbuild/rules_apple): [macos_unit_test](https://github.com/bazelbuild/rules_apple/blob/master/apple/macos.bzl#L303) does not appear to respect `macos_cpus` configuration flag.
 
+This project was created to add context to the [bazelbuild/rules_apple](https://github.com/bazelbuild/rules_apple) GitHub Issue opened [here](https://github.com/bazelbuild/rules_apple/issues/1221).
+
 **Note:** This demo uses Xcode 12.5.1 (per the `.bazelrc`).
 
 ---
