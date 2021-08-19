@@ -8,6 +8,14 @@ This project was created to add context to the [bazelbuild/rules_apple](https://
 
 ---
 
+## Update: 8/19/21
+
+Per the [thread here](https://github.com/bazelbuild/rules_apple/issues/1221#issuecomment-901515040), this was addressed and confirmed fixed for the issue described in this repository in revision `0a2c39c0209087e39818c16908c545d744a2e0ca` of [rules_apple](https://github.com/bazelbuild/rules_apple).
+
+**Note:** With the latest revision, `xcodebuild` is still reluctant to run `x86_64` tests on an Apple Silicon host, even if the architecture configuration is passed explicitly via `--macos_cpus=x86_64` ([see here](https://github.com/bazelbuild/rules_apple/issues/1221#issuecomment-901518352)).
+
+---
+
 ## Setup
 
 The `Makefile` contains two commands to demonstrate the issue:
