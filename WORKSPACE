@@ -10,9 +10,16 @@ load("@bazel_tools//tools/build_defs/repo:http.bzl", "http_archive")
 
 http_archive(
     name = "build_bazel_rules_apple",
-    sha256 = "ba191fc7112cf1133f189c199b307fa91de6e4e00ff7d479cff8d79b2056f7a6",
+    sha256 = "d047a576437bb6fb150d8ad6f504b72eee983ff577b07e897ba600e866d14638",
     url = "https://github.com/bazelbuild/rules_apple/archive/ks/generate-lcov-file-for-ios-tests-run-with-coverage.zip",
     strip_prefix = "rules_apple-ks-generate-lcov-file-for-ios-tests-run-with-coverage",
+)
+
+http_archive(
+    name = "build_bazel_rules_swift",
+    sha256 = "4e03e41e1d6634dcaeb5f56ad07f61843f53108df29273574cfb59e4b582e8da",
+    url = "https://github.com/bazelbuild/rules_swift/archive/ks/add-code-coverage-support-to-swift_test.zip",
+    strip_prefix = "rules_swift-ks-add-code-coverage-support-to-swift_test",
 )
 
 load(
